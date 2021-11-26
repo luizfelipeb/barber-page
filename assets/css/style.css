@@ -1,0 +1,18 @@
+body{
+    background-color: #b8b8b8;
+}
+
+.navbar{
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(0, 0, 0,1) 30%, rgba(0, 0, 0, 0) 100%); 
+}
+
+.nav-logo{
+    width: 100%;
+    padding-left: 10%;
+}
+
+img{
+    width: 10%;
+}
+
