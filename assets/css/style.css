@@ -81,5 +81,33 @@ header{
 
 
 .main-container{
-    background-color: white;
+    background: white;
+    background: linear-gradient(67deg, rgba(255, 255, 255, 1) 60%, rgba(100, 100, 100, 1) 100% )
 }
+
+.info{
+    position: relative;
+    display: flex;
+    padding: 20px;
+}
+
+article .info-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+article .info-content{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.info img {
+    margin-right: 10px;
+    max-width: 20%;  
+}
+
