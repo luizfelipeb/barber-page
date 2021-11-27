@@ -3,6 +3,7 @@ body{
 }
 
 header{
+    background-image: url(../img/cover.jpg);
     background: #2a2a2a;
     background: linear-gradient(90deg, rgba(20, 20, 20, 1) 1%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(20, 20, 20, 1) 100%);
     padding: 20px;    
@@ -15,17 +16,24 @@ header{
 }
 
 .container-nav img{
-    width: 100px;
+    width: 10%;
+    transition: transform .5s;    
 }
 
 .container-nav img:hover{
-    width: 110%;
+    transform: scale(1.4) rotate(360deg);
+    transition: transform .5s;
 }
 
 .navbar{
    position: absolute;
    top: 2.2rem;
    right: 0px;    
+}
+
+.navbar ul{
+    position: relative;
+    vertical-align: auto;
 }
 
 .navbar li{
@@ -38,27 +46,40 @@ header{
     text-decoration: none;
     color: white;
     font-family: 'Monteserrat', sans-serif;
-    font-size: 1.1rem;
-    transition: color 0.5s;
-    transition: font-size 0.7s;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: color .5s;
+    transition: font-size .5s; 
+    
 }
 
 .navbar li a:hover{
-    color: #7d5d2f;
-    font-size: 1.2rem;
-    transition: color 0.5s;
-    transition: font-size 0.7s;
+    color: #7d5d2f;    
+    font-size: 1.25rem;
+    transition: color .5s;    
+    transition: font-size .5s; 
+      
+}
+
+.banner{        
+    width: 100%;    
+    max-height: 50%;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;    
+    position: relative;
 }
 
 
-
-
-.nav-menu{
-    display: inline-block;
-
+.banner img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    height: auto;
+    display: block;    
 }
 
-img{
-    width: 10%;
-}
 
+.main-container{
+    background-color: white;
+}
