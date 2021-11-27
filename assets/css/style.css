@@ -5,6 +5,8 @@ body{
     
 }
 
+/* nav bar */
+
 header{
     background-image: url(../img/cover.jpg);
     background: #2a2a2a;
@@ -54,21 +56,23 @@ header{
     font-family: 'Monteserrat', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
-    transition: color .5s;
-    transition: font-size .5s; 
-    
+    /* transition: color .5s;
+    transition: font-size .5s;  */
+    transition: all .5s;
     
 }
 
 .navbar li a:hover{
-    background: rgba(40,40 , 40, 0.5);
+    background: rgba(60, 60, 60, 0.3);
     color: #7d5d2f;    
     font-size: 1.25rem;
-    transition: color .5s;    
-    transition: font-size .5s; 
-    
+    /* transition: color .5s;    
+    transition: font-size .5s;  */
+    transition: all .5s;
       
 }
+
+/* Banner */
 
 .banner{        
     width: 100%;    
@@ -88,10 +92,11 @@ header{
     display: block;    
 }
 
+/* About */
 
 .main-container{
     background: white;
-    background: linear-gradient(67deg, rgba(255, 255, 255, 1) 60%, rgba(100, 100, 100, 1) 100% )
+    background: linear-gradient(67deg, rgba(255, 255, 255, 1) 60%, rgba(100, 100, 100, 0.5) 100% )
 }
 
 .info{
@@ -120,21 +125,78 @@ article .info-content{
 .info img {
     margin-right: 10px;
     max-width: 20%;  
-    box-shadow: rgba(0, 0, 0, 1) 1px 1px 20px;
-    border-radius: 50px;
-    border: solid #000 2px;
-    transition: border .5s;
+    border: solid #3d2d2a 3px;
+    box-shadow: rgba(0, 0, 0, 1) 1px 1px 10px;
+    border-radius: 200px;
 }
 
-.info img:hover{
-    border: solid #7d5d2f 2px;
-    transition: border .5s;
-    transform: scale(1.02);
+
+
+/* Products */
+
+.products{
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 1%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(20, 20, 20, 1) 100%);
 }
 
-div.teste {
-    width: 400px;
+.cards {
+    padding: 80px 0;
+    margin: 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
 }
+
+.card{    
+    width: 300px;
+    height: 400px;
+    color: rgb(34, 32, 32);  
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: all .7s;    
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: all .7s;
+    box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 40px;
+}
+
+.card img{
+    width: 100px;
+    height: 200px;    
+}
+
+.info-card{
+    margin: 0px;
+    padding: 0px;
+}
+
+.info-card h3, p{
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.info-card h3{
+    background: #7d5d2f;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.info-card p{
+    padding: 40px 0;
+    font-size: 2rem;
+}
+
+
+
+/* Footer */
 
 .footer-container{
     border-top: red;
@@ -145,7 +207,7 @@ div.teste {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #000;
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 1%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(20, 20, 20, 1) 100%);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -163,6 +225,7 @@ div.teste {
 .footer-icons ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-icons a{
@@ -207,3 +270,7 @@ div.teste {
     transform: scale(1.2);
     color: #7d5d2f;
 }
+
+
+
+
