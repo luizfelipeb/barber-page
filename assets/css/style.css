@@ -1,5 +1,8 @@
 body{
-    background-color: #b8b8b8;
+    /* background-color: #b8b8b8; */
+    background: #2a2a2a;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    
 }
 
 header{
@@ -43,6 +46,9 @@ header{
 }
 
 .navbar li a{
+    padding: 10px;
+    margin: 0;
+    border-radius: 20px;
     text-decoration: none;
     color: white;
     font-family: 'Monteserrat', sans-serif;
@@ -51,13 +57,16 @@ header{
     transition: color .5s;
     transition: font-size .5s; 
     
+    
 }
 
 .navbar li a:hover{
+    background: rgba(40,40 , 40, 0.5);
     color: #7d5d2f;    
     font-size: 1.25rem;
     transition: color .5s;    
     transition: font-size .5s; 
+    
       
 }
 
@@ -88,7 +97,8 @@ header{
 .info{
     position: relative;
     display: flex;
-    padding: 20px;
+    flex-direction: row;
+    padding: 40px;
 }
 
 article .info-title{
@@ -104,10 +114,96 @@ article .info-content{
     font-weight: 200;
     text-align: center;
     font-size: 1.2rem;
+    
 }
 
 .info img {
     margin-right: 10px;
     max-width: 20%;  
+    box-shadow: rgba(0, 0, 0, 1) 1px 1px 20px;
+    border-radius: 50px;
+    border: solid #000 2px;
+    transition: border .5s;
 }
 
+.info img:hover{
+    border: solid #7d5d2f 2px;
+    transition: border .5s;
+    transform: scale(1.02);
+}
+
+div.teste {
+    width: 400px;
+}
+
+.footer-container{
+    border-top: red;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-container div img{
+    width: 100px;
+    transition: transform .5s;
+}
+
+.footer-container div img:hover{
+    transform: rotate(360deg) scale(1.2);
+    transition: transform .5s;
+}
+
+.footer-icons ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-icons a{
+    padding: 10px;
+    color: #fff;
+    transition: color 0.5s;
+    transition: transform 0.5s;
+    
+}
+
+.footer-icons a:hover{
+    transition: color 0.5s;
+    transition: transform 0.5s;
+    color: #7d5d2f;
+    transform: scale(1.8);
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+
+.footer-title h4{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.personal-icons a{
+    padding-left: 10px;
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.personal-icons a:hover{
+    padding-left: 10px;
+    transform: scale(1.2);
+    color: #7d5d2f;
+}
