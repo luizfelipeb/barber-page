@@ -16,14 +16,15 @@
 </head>
 <body>
     <!-- Header -->    
-    <header>
+    <header id="header-menu">
         <div class="container-nav">
             <h1><a href="index.html"><img src="./assets/img/logo-white.png" alt="logo"></a><h1>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Produtos</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="#header-menu">Home</a></li>
+                    <li><a href="#section-services">Serviços</a></li>
+                    <li><a href="#section-schedule">Horário</a></li>
+                    <li><a href="#section-contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,7 +47,7 @@
         </section>
 
         <!-- Products Cards -->
-        <section class="products">
+        <section id="section-services" class="products">
             <div class="cards-wrap">
                 <div class="cards">
                     <div class="card">
@@ -74,7 +75,7 @@
             </div>
         </section>
 
-        <section class="main-container-table">
+        <section id="section-schedule" class="main-container-table">
             <div class="table-container">
                 <h3>Horários de Funcionamento</h3>
                 <table>
@@ -118,10 +119,43 @@
             </div>
         </section>
 
-        <section class="container-contact-form">
-            <div class="former-container">
+        <section id="section-services" class="container-services-form">
+            <div class="form-container">
+                <div>
+                    <h3>Marque Seu Horário Conosco</h3>
+                </div>
                 <form>
+                    <div>
+                        <label for="fname">Nome:</label>
+                        <input id="fname" name="fname" type="text">
+                        
+                        <label for="schedule-day">Dia do Atendimento:</label>
+                        <select name="schedule-day" id="schedule-day">
+                            <option value="tuesday">Terça-Feira</option>
+                            <option value="wednesday">Quarta-Feira</option>
+                            <option value="thursday">Quinta-Feira</option>
+                            <option value="friday">Sexta-Feira</option>
+                            <option value="saturday">Sábado</option>
+                        </select> 
+                    </div>
+
+                    <div class="services-option">
+                        <h2 class="service-title-form">Serviço:</h2>
+                        <input type="radio" id="hair" name="service" value="Hair">
+                        <label for="service-hair">Cabelo</label>
+                        <input type="radio" id="beard" name="service" value="Beard">
+                        <label for="service-hair">Barba</label>
+                        <input type="radio" id="combo" name="service" value="Combo">
+                        <label for="service-hair">Cabelo + Barba</label>
+                        
+                        
+                        <div class="time-container">
+                            <label for="schedule-time">Horário:</label>
+                            <input type="time" id="schedule-time" name="schedule-time"> 
+                        </div>
+                    </div>
                     
+                    <input class="button-form" type="submit" value="Marcar Horário">
                 </form>
             </div>
         </section>
