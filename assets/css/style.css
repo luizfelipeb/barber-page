@@ -42,7 +42,7 @@ header{
     padding: 20px;    
 }
 
-.container-nav{
+.container-nav{    
     position: relative;
     margin: 0 auto;
     width: 940px;
@@ -99,6 +99,9 @@ header{
     transition: all .5s;
       
 }
+
+
+
 
 /* Banner */
 
@@ -382,7 +385,7 @@ article .info-content{
     margin: 0;
 }
 
-.footer-title h4{
+.footer-title h4{  
     color: var(--text-color);
     font-family: var(--font-family);
     font-size: 1rem;
@@ -400,6 +403,96 @@ article .info-content{
     color: var(--text-hover);
 }
 
+@media only screen and (max-width: 600px) {
+
+    
+    .navbar{
+        display: none;
+        justify-content: center;
+    }
 
 
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info img{
+        margin: 20px auto;
+        transform: scale(1.4);
+        display: flex;
+    }
+    
+    .info h1{
+        font-size: 2rem;
+    }
+
+    .info p{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .card {
+        transform: scale(.8);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .table-container{
+        transform: scale(.90);
+    }
+
+    .table-container tr td:nth-child(2n){
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .navbar{
+        display: none;
+        justify-content: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info img{
+        margin: 0px auto;
+        transform: scale(1.1);
+        display: flex;
+    }
+    
+    .info h1{
+        font-size: 3rem;
+    }
+
+    .info p{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .card {
+        transform: scale(.8);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .table-container{
+        transform: scale(1);
+    }
+
+    .table-container tr td:nth-child(2n){
+        padding: 10px;
+        text-align: center;
+    }
+
+
+}
 

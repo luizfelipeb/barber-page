@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,8 @@
     <header id="header-menu">
         <div class="container-nav">
             <h1><a href="index.html"><img src="./assets/img/logo-white.png" alt="logo"></a><h1>
-            <nav class="navbar">
+          
+            <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="#header-menu">Home</a></li>
                     <li><a href="#section-services">Serviços</a></li>
@@ -28,11 +29,14 @@
                 </ul>
             </nav>
         </div>
+
+        
     </header>
 
     <div class="banner">    
          <img class="banner-img" src="assets/img/cover.jpg">        
     </div>
+    
     
 
     
@@ -122,7 +126,7 @@
         <section id="section-services" class="container-services-form">
             <div class="form-container">
                 <div>
-                    <h3>Marque Seu Horário Conosco</h3>
+                    <h3>Agende Seu Horário</h3>
                 </div>
                 <form>
                     <div>
@@ -141,12 +145,12 @@
 
                     <div class="services-option">
                         <h2 class="service-title-form">Serviço:</h2>
-                        <input type="radio" id="hair" name="service" value="Hair">
+                        <input type="radio" id="service-hair" name="service" value="Hair">
                         <label for="service-hair">Cabelo</label>
-                        <input type="radio" id="beard" name="service" value="Beard">
-                        <label for="service-hair">Barba</label>
-                        <input type="radio" id="combo" name="service" value="Combo">
-                        <label for="service-hair">Cabelo + Barba</label>
+                        <input type="radio" id="service-beard" name="service" value="Beard">
+                        <label for="service-beard">Barba</label>
+                        <input type="radio" id="service-combo" name="service" value="Combo">
+                        <label for="service-combo">Cabelo + Barba</label>
                         
                         
                         <div class="time-container">
@@ -196,6 +200,6 @@
         
     </footer>
 
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
